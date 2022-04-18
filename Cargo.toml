@@ -11,6 +11,7 @@ iai = "0.1.1"
 name = "criterion_iai_benchmark"
 harness = false
 
-[[bench]]
-name = "criterion_iai_first_mover_benchmark"
-harness = false
+# NOTE: the numbers these produce are presently unstable
+#[[bench]]
+#name = "criterion_iai_first_mover_benchmark"
+#harness = false
