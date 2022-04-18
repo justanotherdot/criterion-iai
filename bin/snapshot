@@ -1,0 +1,16 @@
+#!/bin/sh -eux
+
+ROOT=$(git rev-parse --show-toplevel)
+
+OLD_SNAPSHOT="$ROOT/snapshots/bench.snap"
+NEW_SNAPSHOT="$ROOT/snapshots/bench.snap.new"
+
+cargo criterion > "$NEW_SNAPSHOT"
+
+if [ -f "$OLD_SNAPSHOT" ]; then
+  diff "$NEW_SNAPSHOT" "$OLD_SNAPSHOT" || true
+fi
+
+mv "$NEW_SNAPSHOT" "$OLD_SNAPSHOT"
+
+[ -f "$NEW_SNAPSHOT" ] && rm "$NEW_SNAPSHOT" || true

@@ -1,0 +1,4 @@
+steps:
+  - label: "Benchmarks"
+    command:
+      - "bin/snapshot"

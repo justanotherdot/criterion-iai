@@ -1,0 +1,19 @@
+iai_assign
+  Instructions:                 129 (No change)
+  L1 Accesses:                  163 (No change)
+  L2 Accesses:                    9 (No change)
+  RAM Accesses:                  28 (No change)
+  Estimated Cycles:            1188 (No change)
+
+iai_store_load
+  Instructions:                 130 (No change)
+  L1 Accesses:                  158 (No change)
+  L2 Accesses:                    6 (No change)
+  RAM Accesses:                  31 (No change)
+  Estimated Cycles:            1273 (No change)
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
