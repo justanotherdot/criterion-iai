@@ -10,3 +10,7 @@ iai = "0.1.1"
 [[bench]]
 name = "criterion_iai_benchmark"
 harness = false
+
+[[bench]]
+name = "criterion_iai_first_mover_benchmark"
+harness = false
